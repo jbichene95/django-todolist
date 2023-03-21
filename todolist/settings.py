@@ -89,7 +89,8 @@ STATIC_URL = "/static/"
 
 
 # Login settings
-
+import os
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 LOGIN_URL = "/auth/login/"
 
 LOGOUT_URL = "/auth/logout/"
